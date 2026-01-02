@@ -315,7 +315,7 @@ margin: 56px 70px 24px 70px;
 
 /* ================= FOOTER ================= */
 footer{
-  background:radial-gradient(circle at top,#111b3c,#05070f);
+  background:radial-gradient(circle at top,#d0d0d3,#545454);
   color:#cfd6e4;
 }
 .footer-top{
@@ -333,7 +333,7 @@ footer{
   margin-bottom:22px;
 }
 .footer-grid a{
-  color:#aab2c5;
+  color:#ffffff;
   text-decoration:none;
   margin-bottom:14px;
   display:block;
@@ -345,6 +345,50 @@ footer{
   padding:25px 8%;
   font-size:.85rem;
   text-align:center;
+}
+.social{
+  display:flex;
+  align-items:center;
+  gap:16px;           /* space between icons */
+}
+
+.social a img{
+  display:block;      /* removes inline spacing issues */
+}
+.line-break{
+  height: 1px;
+  width:100%;
+  margin:20px 0;
+  background-color: #ffffff;
+}
+
+.location{
+  display:flex;
+  justify-content:center;   /* center horizontally */
+  align-items:center;
+  gap:20%;
+}
+
+.location a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:20px;           /* bigger text */
+  font-weight:600;
+  color:#ffffff;
+  text-decoration:none;
+}
+
+.location img{
+  width:26px;
+  height:26px;
+  color:#ffffff;
+}
+
+.location a:hover{
+  color:#000;
+  transform:translateY(-2px);
+  transition:0.2s ease;
 }
 
 /* ================= RESPONSIVE ================= */
