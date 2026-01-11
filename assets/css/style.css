@@ -319,7 +319,7 @@ footer{
   color:#cfd6e4;
 }
 .footer-top{
-  padding:90px 8%;
+  padding:20px 8% 10px 8%;
 }
 .footer-grid{
   display:grid;
@@ -329,20 +329,21 @@ footer{
 .footer-grid h4{
   color:#fff;
   letter-spacing:2px;
-  font-size:.85rem;
+  /* font-size:.85rem; */
   margin-bottom:22px;
 }
 .footer-grid a{
   color:#ffffff;
   text-decoration:none;
-  margin-bottom:14px;
+  margin-bottom:10px;
   display:block;
+  font-size: large;
 }
 .footer-grid a:hover{color:#fff}
 
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.08);
-  padding:25px 8%;
+  padding:10px 8%;
   font-size:.85rem;
   text-align:center;
 }
@@ -358,7 +359,7 @@ footer{
 .line-break{
   height: 1px;
   width:100%;
-  margin:20px 0;
+  margin:10px 0;
   background-color: #ffffff;
 }
 

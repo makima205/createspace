@@ -1,0 +1,188 @@
+/* ================= BASE ================= */
+body{
+  font-family: 'Inter', sans-serif;
+  margin:0;
+  color:#2b2b2b;
+  background:#fff;
+  line-height:1.7;
+}
+
+img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* ================= PAGE WRAPPER ================= */
+.component-body{
+  max-width:1400px;
+  margin: 25px 70px 80px 70px;
+
+}
+
+/* ================= TITLES ================= */
+.component-title{
+  font-size:42px;
+  font-weight:600;
+  margin:20px 0 0 0;
+}
+
+.component-head{
+  text-transform:capitalize;
+}
+
+/* ================= HERO IMAGE ================= */
+
+.single-img img{
+  max-height:80vh;
+  object-fit:cover;
+}
+
+/* ================= PROJECT META ================= */
+.component-menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+  margin:80px 0;
+}
+
+.component-menu-title{
+  font-size:14px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#777;
+  margin-bottom:6px;
+}
+
+.component-menu p{
+  font-size:16px;
+  font-weight:500;
+}
+
+/* ================= IMAGE + TEXT ================= */
+.img-text{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:60px;
+  margin:100px 0;
+}
+
+.component-text{
+  font-size:16px;
+  color:#555;
+  text-align: justify;
+}
+
+/* ================= TEXT ONLY ================= */
+.single-text{
+  margin:80px 0 30px;
+}
+
+.single-text .component-title{
+  font-size:28px;
+}
+
+/* ================= IMAGE GRIDS ================= */
+.two-image,
+.three-image{
+  gap:30px;
+  margin:80px 0;
+}
+
+.two-image{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.three-image{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.two-image img,
+.three-image img{
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+
+/* ================= PAGINATION ================= */
+.paginationbox{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  margin:120px 0 40px;
+}
+
+.prev-next-title span{
+  font-size:13px;
+  color:#777;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.prev-next{
+  font-size:22px;
+  font-weight:500;
+  margin-top:6px;
+}
+
+/* ================= FOOTER ALIGN HELP ================= */
+.footer-section{
+  background:#111;
+  color:#fff;
+  margin-top:120px;
+}
+
+/* ===== IMAGE LIGHTBOX ===== */
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.lightbox img{
+  max-width:95%;
+  max-height:95%;
+  object-fit:contain;
+}
+
+.lightbox-close{
+  position:absolute;
+  top:30px;
+  right:40px;
+  font-size:40px;
+  color:#fff;
+  cursor:pointer;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:1100px){
+  .img-text{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:800px){
+  .two-image,
+  .three-image{
+    grid-template-columns:1fr;
+  }
+
+  .component-title{
+    font-size:32px;
+  }
+
+  .component-body{
+    margin-top:90px;
+  }
+}
